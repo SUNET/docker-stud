@@ -1,6 +1,7 @@
 FROM ubuntu
 MAINTAINER leifj@sunet.se
 RUN apt-get -y update
+RUN apt-get -y dist-upgrade
 RUN apt-get install -y build-essential libssl-dev libz-dev ssl-cert git-core
 RUN apt-get install -y libev-dev
 RUN git clone https://github.com/axsh/stud.git
